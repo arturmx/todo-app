@@ -1,0 +1,52 @@
+$primaryColor: #FFF;
+$secondaryColor: black;
+$tertriaryColor: grey;
+
+body {
+    font-family: "Inter", "sans-serif";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$screen-lg: 1300px;
+$screen-md: 930px;
+$screen-sm: 767px;
+$screen-xs: 600px;
+
+.container {
+    width:1290px;
+    margin:auto;
+
+    @media screen and (max-width: $screen-lg) {
+        width:930px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+        width:767px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        width:600px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+        width:300px;
+    }
+}
+
+.button {
+
+}
+
+@keyframes animation1{
+    0% {
+        
+    }
+    100% {
+        
+    }
+}
+
+// css bg path: url(./assets/slide1.png)
+

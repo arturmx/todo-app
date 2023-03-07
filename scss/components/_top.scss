@@ -1,0 +1,104 @@
+.top {
+    padding: 56px 0 517px;
+    background-color: #3F72AF;
+
+    &__box {
+        // background-color: $primaryColor;
+        background-color: #FFF;
+        border-radius: 10px;
+        padding-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__h1 {
+        font-size: 40px;
+        line-height: 46px;
+        margin: 20px 0 10px;
+    }
+
+    &__form {
+        height: 32px;
+        width: 295px;
+        display: flex;
+        justify-content:center;
+    }
+
+    &__input {
+        width: 250px;
+        background-color: #DBE2EF;
+        border:1px solid #B1B1B166;
+        border-right: 0;
+        text-indent: 10px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+
+        @media screen and (max-width: 767px) {
+            width: 205px;
+        }
+    }
+
+    &__button {
+        width: 45px;
+        cursor:pointer;
+    }
+
+    &__line {
+        border: 1px solid #000;
+        width: 500px;
+        margin: 15px 0 15px;
+
+        @media screen and (max-width: 767px) {
+            width: 320px;
+        }
+    }
+
+    &__field {
+        height: 55px;
+        width: 490px;
+        background-color: #DBE2EF;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 300px;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #7D7C7C;
+        height: 24px;
+        width: 24px;
+        border-radius: 5px;
+        margin-left: 20px;
+        cursor:pointer;
+    }
+
+    &__minus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #7D7C7C;
+        height: 24px;
+        width: 24px;
+        border-radius: 5px;
+        margin-right: 20px;
+        cursor:pointer;
+    }
+
+    &__todo {
+        color: #000;
+        
+    }
+
+    &__hide {
+        display:none;
+    }
+}
