@@ -37,3 +37,51 @@ minus.addEventListener("click", function() {
 
 plus.addEventListener("click", insert);
 
+// adding 4 tasks on page load
+
+const insert2 = function() {
+
+  const items = [
+    {
+      text: "do the dishes",
+      done: true,
+    },
+    {
+      text: "walk the dog",
+      done: false,
+    },
+    {
+      text: "throw away rubbish",
+      done: false,
+    },
+    {
+      text: "wash the bag",
+      done: false,
+    }
+  ]
+  for (let i = 0; i < items.length; i++) {
+
+    const addedCode = `<div class="top__field">
+                      <div class="top__checkbox">
+                        <img class="top__tick top__hide" src="./assets/tick.svg" />
+                      </div>
+                      <p class="top__todo">${items[i].text}</p>
+                      <div class="top__minus">X</div>
+                     </div>`;
+                     const parent = document.querySelector('.top__box');
+     parent.insertAdjacentHTML("beforeend", addedCode);
+
+     const tick = document.querySelectorAll('.top__tick')
+     for (let i = 0; i < tick.length; i++) {
+
+     }
+
+     if (items[i].done) {
+        tick[i].classList.remove('top__hide')
+     }
+     console.log(items[i].done)
+  }
+                     
+}
+
+window.onload = insert2();
