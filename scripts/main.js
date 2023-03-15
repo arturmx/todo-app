@@ -62,8 +62,4 @@ plus.addEventListener("click", function(){
 
 items.forEach(function(el) {
   insert(el.text, el.checked);
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 6bd2785df870a54a7436c6f00626e05e46f10d8b
